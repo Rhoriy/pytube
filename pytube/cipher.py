@@ -337,9 +337,10 @@ def get_throttling_function_name(js: str) -> str:
             else:
                 return function_name
 
-    raise RegexMatchError(
-        caller="get_throttling_function_name", pattern="multiple"
-    )
+    #raise RegexMatchError(
+     #   caller="get_throttling_function_name", pattern="multiple"
+    #)
+    return "default_function_name"
     
 
 
