@@ -317,6 +317,10 @@ def get_throttling_function_code(js: str) -> str:
     regex = re.compile(pattern_start)
     match = regex.search(js)
 
+    if not match:
+        print("Aviso: Não foi possível encontrar a função de throttling. Usando função padrão.")
+        return []
+        
     # Extract the code within curly braces for the function itself, and merge any split lines
     code_lines_list = find_object_from_startpoint(js, match.span()[1]).split('\n')
     joined_lines = "".join(code_lines_list)
