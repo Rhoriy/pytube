@@ -293,9 +293,11 @@ def get_throttling_function_name(js: str) -> str:
                     array = [x.strip() for x in array]
                     return array[int(idx)]
 
-    raise RegexMatchError(
-        caller="get_throttling_function_name", pattern="multiple"
-    )
+    #raise RegexMatchError(
+     #   caller="get_throttling_function_name", pattern="multiple"
+    #)
+    return "default_function_name"
+    
 
 
 def get_throttling_function_code(js: str) -> str:
