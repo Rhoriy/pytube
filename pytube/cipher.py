@@ -252,8 +252,6 @@ def get_transform_map(js: str, var: str) -> Dict:
     return mapper
 
 
-
-'''
 def get_throttling_function_name(js: str) -> str:
     """Extract the name of the function that computes the throttling parameter.
 
@@ -340,6 +338,7 @@ def get_throttling_function_name(js: str) -> str:
     raise RegexMatchError(
         caller="get_throttling_function_name", pattern="multiple"
     )
+'''    
 
 
 def get_throttling_function_code(js: str) -> str:
