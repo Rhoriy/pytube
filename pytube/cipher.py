@@ -305,7 +305,6 @@ def get_throttling_function_name(js: str) -> str:
 # Change ******** Here ******
 
 def get_throttling_function_name(js: str) -> str:
-    
     """Extract the name of the function that computes the throttling parameter.
 
     :param str js:
